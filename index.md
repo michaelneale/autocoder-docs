@@ -1,6 +1,6 @@
 ## Welcome to Auto Coder
 
-This is a suite of APIs to help speed up developers day to day lives with an AI assistant, powered by GPT-3 and google cloud functions.
+This is a suite of APIs to help speed up developers day to day lives with an AI assistant, powered by GPT-3, google cloud functions, tensorflow and more.
 
 I aim to integrate much of this with IDEs like VS code (some is already) and github pull request workflows and more. 
 Here the apis are documented that you can try out.
@@ -54,6 +54,13 @@ This will update one file at a time, but if you are using github, you can use a 
 
 > ```https://us-east1-micprojects.cloudfunctions.net/auto-flag-remover?flag_name=showDeleteExperimentButtonInNewFlagsView&org=michaelneale&token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN```
 
+
+### Automatically control feature flags based on monitoring in production
+
+With autopilot for feature flags, you can have it monitor an environment (say production) for anomalies and roll back any recently deployed features. 
+
+See this https://rollout-autopilot.com/ for how to use.
+
 ### More to come!
 
 
@@ -62,6 +69,6 @@ This will update one file at a time, but if you are using github, you can use a 
 
 
 
-### more complex examples: 
+### more complex examples of explaining code 
 
 > ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-code-explainer --data '{"code":"    history = model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.1,\ncallbacks=[keras.callbacks.EarlyStopping(monitor='val_loss', patience=3, mode='min')], shuffle=False)\nprint(model.evaluate(X_test, y_test))"}'```
