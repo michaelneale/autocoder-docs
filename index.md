@@ -61,7 +61,15 @@ With autopilot for feature flags, you can have it monitor an environment (say pr
 
 See this https://rollout-autopilot.com/ for how to use.
 
-### More to come!
+### Write code from a description alone
+
+This service will help you write code in a given language, based on a description, as a starting point:
+
+> ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-code-author --data '{"description": "Write a class that gets the current memory utilisation", "language":"Java"}' ```
+
+Once you have some code, you can help you keep writing code with: 
+
+> ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-code-author --data '{"description": "filter the list of days to only include days that have a consonant in their name", "code":"days = [\"Monday\", \"Tuesday\"]"}' ```
 
 
 
