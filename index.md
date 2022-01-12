@@ -59,7 +59,7 @@ This will update one file at a time, but if you are using github, you can use a 
 
 With autopilot for feature flags, you can have it monitor an environment (say production) for anomalies and roll back any recently deployed features. 
 
-See this https://rollout-autopilot.com/ for how to use.
+See this <a href='https://rollout-autopilot.com/'>Autopilot</a> for how to use this.
 
 ### Write code from a description alone
 
@@ -72,11 +72,22 @@ Once you have some code, you can help you keep writing code with:
 > ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-code-author --data '{"description": "filter the list of days to only include days that have a consonant in their name", "code":"days = [\"Monday\", \"Tuesday\"]"}' ```
 
 
+### Solve a problem from a description
+
+(AKA cheating on a coding test).
+
+The Toy Robot is a popular coding test in these parts. A description of it is <a href='https://gist.githubusercontent.com/michaelneale/ba3a0fcfdf2d86525a2e12e68e36f47e/raw/a91d8df00a658371c7c74a02277df2185fd60cb2/gistfile1.txt'>here</a>
+
+You can use that description as input to generate some code to implement it like this: 
+
+```python
+import requests
+url = 'https://us-east1-micprojects.cloudfunctions.net/ai-code-author'
+x = requests.post(url, json = {'language': 'python', 'description': requests.get("https://gist.githubusercontent.com/michaelneale/ba3a0fcfdf2d86525a2e12e68e36f47e/raw/a91d8df00a658371c7c74a02277df2185fd60cb2/gistfile1.txt").content.decode('utf-8')})
+open("generated_app.py", 'wb').write(x.content)
+```
 
 
-
-
-
-### more complex examples of explaining code 
+### A more complex example of explaining code 
 
 > ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-code-explainer --data '{"code":"    history = model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.1,\ncallbacks=[keras.callbacks.EarlyStopping(monitor='val_loss', patience=3, mode='min')], shuffle=False)\nprint(model.evaluate(X_test, y_test))"}'```
