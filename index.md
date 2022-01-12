@@ -78,7 +78,7 @@ Once you have some code, you can help you keep writing code with:
 
 The Toy Robot is a popular coding test in these parts. A description of it is <a href='https://gist.githubusercontent.com/michaelneale/ba3a0fcfdf2d86525a2e12e68e36f47e/raw/a91d8df00a658371c7c74a02277df2185fd60cb2/gistfile1.txt'>here</a>
 
-You can use that description as input to generate some code to implement it like this: 
+You can turn that description, as is, into code:
 
 ```python
 import requests
