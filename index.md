@@ -87,6 +87,10 @@ x = requests.post(url, json = {'language': 'python', 'description': requests.get
 open("generated_app.py", 'wb').write(x.content)
 ```
 
+### Check if a chunk of code is using a feature flag or not
+
+> ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-flag-detector --data '{"code":"def calc(a,b):\n    return a+b\n"}'```
+
 
 ### A more complex example of explaining code 
 
