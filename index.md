@@ -33,7 +33,7 @@ Ever said "I'll write some unit tests when I get time" - well the auto coder has
 
 For a trivial example: 
 
-> ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-auto-test --data '{"code":"def calc(a,b):\n    return a+b\n"}'```
+> ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-auto-test --data '{"code":"def calc(a,b):\n return a+b\n", "language":"Python"}'```
 
 ```
 def test_calc():
