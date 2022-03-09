@@ -27,7 +27,7 @@ Will return:
 
 Yeah probably should fix that!
 
-### Generate unit tests. 
+### Generate unit tests 
 
 Ever said "I'll write some unit tests when I get time" - well the auto coder has your back: 
 
@@ -41,6 +41,10 @@ def test_calc():
 ```
 
 It works for multiple languages and more complex, less contrived snippets of code too (give it a try). 
+
+### Github App to automatically add tests
+
+For the lasiest people of all: https://github.com/apps/cloudbees-autotest when installed will look for new code, and if there isn't a test as part of a PR, try to add one for you (as a new commit on that PR).
 
 
 ### Remove old feature flags from your code
