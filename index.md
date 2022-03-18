@@ -44,8 +44,12 @@ It works for multiple languages and more complex, less contrived snippets of cod
 
 ### Github App to automatically add tests
 
-For the lasiest people of all: https://github.com/apps/cloudbees-autotest when installed will look for new code, and if there isn't a test as part of a PR, try to add one for you (as a new commit on that PR).
+For the lasiest people of all: <a href='https://github.com/apps/cloudbees-autotest'>this github app</a> when installed will look for new code, and if there isn't a test as part of a PR, try to add one for you (as a new commit on that PR). I recommend installing it on just one repo at a time.
 
+
+### Write a pipeline from a natural language description
+
+Try out <a href='https://pipeline-maker-ai.com/'>this tool</a> which is hosted as a google cloud run app, to write pipelines for you from natural language.
 
 ### Remove old feature flags from your code
 
@@ -94,6 +98,7 @@ open("generated_app.py", 'wb').write(x.content)
 ### Check if a chunk of code is using a feature flag or not
 
 > ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-flag-detector --data '{"code":"def calc(a,b):\n    return a+b\n"}'```
+
 
 
 ### A more complex example of explaining code 
