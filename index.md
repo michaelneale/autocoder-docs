@@ -1,6 +1,6 @@
 ## Welcome to Auto Coder
 
-This is a suite of APIs to help speed up developers day to day lives with an AI assistant, powered by GPT-3, google cloud functions, tensorflow and more.
+This is a suite of APIs to help speed up developers day to day lives with an AI assistant, powered by codex, GPT-3, google cloud functions, tensorflow and more.
 
 I aim to integrate much of this with IDEs like VS code (some is already) and github pull request workflows and more. 
 Here the apis are documented that you can try out.
