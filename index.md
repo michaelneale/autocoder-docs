@@ -100,6 +100,10 @@ open("generated_app.py", 'wb').write(x.content)
 > ```curl --request POST --header 'Content-Type: application/json' --url https://us-east1-micprojects.cloudfunctions.net/ai-flag-detector --data '{"code":"def calc(a,b):\n    return a+b\n"}'```
 
 
+### Read a README.md file and code listing and decide how to deploy an app
+
+This app will read the README.md and the code listing, and apply some natural language constraints to decide if it can deploy the app, and to what environment: <a href='https://cloudbees-answers.page/'>try it here.</a>
+
 
 ### A more complex example of explaining code 
 
