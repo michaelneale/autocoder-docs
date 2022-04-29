@@ -58,9 +58,10 @@ Try using auto coder to help you out:
 
 > ```curl --data-binary @src/services/Rox.ts "https://us-east1-micprojects.cloudfunctions.net/auto-flag-remover?flag_name=showDeleteExperimentButtonInNewFlagsView" -o src/services/Rox.ts```
 
-This will update one file at a time, but if you are using github, you can use a Personal Access Token and have it update your org all in one hit, opening pull requests for each repository that needs a change: 
+This will update one file at a time. 
 
-> ```https://us-east1-micprojects.cloudfunctions.net/auto-flag-remover?flag_name=showDeleteExperimentButtonInNewFlagsView&org=michaelneale&token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN```
+There is a github app for this <a href='https://feature-flag-remover.xyz'>which when installed to a repo or org, can open pull requests for you to remove a specified feature flag.</a> 
+
 
 
 ### Automatically control feature flags based on monitoring in production
